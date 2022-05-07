@@ -1,3 +1,13 @@
 # Conditional Execution
+hrs = input("Enter Hours:")
+h = float(hrs)
+perhr=input("Enter rate per hour")
+p=float(perhr)
+if h<=40:
+    gross=h*p
 
-hrs = input("Enter hours? ")
+else:
+    gross=40*p
+    gross=gross +((h-40)*(1.5*p))
+    
+print(gross)	
