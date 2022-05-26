@@ -1,12 +1,8 @@
-fname = input("Enter file name: ")
-fh = open(fname)
-lst = list()
-for line in fh:
-    t=line.rstrip().split()
-    for element in t:
-     if element not in lst:
-      lst.append(element)
-    else:
-        continue
-lst.sort() 
-print(lst)
+import re
+hand = input("Enter name of the file:")
+fh=open(hand).read()
+x=re.findall('[0-9]+',fh)
+sum=0
+for i in x:
+    sum+=int(i)
+print(sum)
