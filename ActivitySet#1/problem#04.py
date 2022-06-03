@@ -1,12 +1,23 @@
 # Conditional Execution
-hrs = input("Enter Hours:")
-h = float(hrs)
-perhr=input("Enter rate per hour")
-p=float(perhr)
-if h<=40:
-    gross=h*p
 
-else:
-    gross=40*p
-    gross=gross +((h-40)*(1.5*p))
+def inpuy():
+    h=float(input('Enters Hours:'))
+    return h
+def compute(h,r):
+    if h<40:
+        g=h*r
+    else:
+        g=40*r
+        g=g+((h-40)*(1.5*r))
+    return g
+def output(g):
+    print('gross pay:'+str(g))
     
+def main():
+    h=inpuy()
+    r=inpuy()
+    g=compute(h,r)
+    output(g)
+
+if __name__=="__main__":
+    main()
