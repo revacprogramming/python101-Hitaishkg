@@ -5,9 +5,7 @@ if len(fname) < 1:
 count = 0
 fh = open(fname)
 for k in fh:
-    if k.startswith('From:'):
-            continue
-    if  k.startswith('From'):               
+    if  k.startswith('From') and if not k.startswith("From:"):     
      	word=k.split()
      	print(word[1])
      	count=count+1
