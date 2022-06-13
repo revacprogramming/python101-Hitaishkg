@@ -6,22 +6,24 @@ def get_cs():
     return s
 
 
-
 def cs_to_dict(cs):
     """convert connect string to a dictionary"""
-    dic={}
-    cs=cs.split(";")
-    for i in cs:
-        i = i.split("=")
-        dic[i[0]]=i[1]
+    dic = {}
+    cs = cs.split(";")
+    dic = {i.split('=')[0]:i.split('=')[1] for i in cs}
+    # for i in cs:
+    #     i = i.split("=")
+    #     dic={i[0]:i[1] for i in cs}
+    #print(cs)
+    
     return dic
 
 
 def dict_to_cs(d):
     """convert a dictionary to connect string"""
-    l=' '
+    l = ' '
     for i in d:
-        l+= i+"="+d.get(i)+";"
+        l += i+"="+d.get(i)+";"
 
     return l
 
@@ -29,7 +31,7 @@ def dict_to_cs(d):
 def main():
     cs = get_cs()
 
-    d =  cs_to_dict(cs) # convert connect string to a dictionary
+    d = cs_to_dict(cs)  # convert connect string to a dictionary
     print(d)
 
     cs = dict_to_cs(d)
