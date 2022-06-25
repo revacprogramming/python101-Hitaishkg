@@ -28,8 +28,6 @@
 
 
 
-
-
 def get_cs():
     s = input("Enter string: ")
     return s
