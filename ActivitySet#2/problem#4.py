@@ -25,7 +25,6 @@
 
 # if __name__ == '__main__':
 #     main()
-
 def get_cs():
     s = input("Enter string: ")
     return s
