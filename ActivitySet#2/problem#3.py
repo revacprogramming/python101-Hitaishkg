@@ -16,8 +16,6 @@ def cs_to_lot(cs):
         l.append(i)
     return l
 
-
-
 def main():
     cs = get_cs()
 
