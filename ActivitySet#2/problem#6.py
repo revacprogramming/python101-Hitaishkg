@@ -4,7 +4,7 @@ class Menu(dict):
         self=dict()
 
     def add(self,item,price):
-        self[item]=price
+        self[item]= price
 
     def show(self):
         l = ' '
