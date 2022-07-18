@@ -11,7 +11,7 @@ class Menu:
       k=""
       for a in self.foods:
         k+=(f"{a}  {self.foods[a]}\n")
-      return(k[:-1])
+      return(k[:-1])  
 m = Menu()
 m = m + ("idly", 10)+ ("vada",20) 
 print(m)
