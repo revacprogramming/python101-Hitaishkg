@@ -22,7 +22,7 @@ class Order:
 class Bill:
     """fill in class definition here"""
 
-    def __init__(self, menu, order):
+    def __init__(self,  menu,  order):
         self.bill = sum(v * menu[k] for k, v in order.orders.items())
 
     def __str__(self):
