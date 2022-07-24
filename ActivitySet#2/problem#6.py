@@ -9,7 +9,7 @@ class Menu(dict):
     def show(self):
         l = ' '
         for i  in self:
-            l += i+" "+str(self.get(i))
+            l += i +" "+ str(self.get(i))
             x=l[:8]
             y=l[8:]
         print(x)
