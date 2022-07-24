@@ -1,6 +1,6 @@
 class Menu(dict):
     """fill in class definition  here"""
-    def __init__(self) -> None:
+    def __init__(self) ->  None:
         self=dict()
 
     def add(self,item,price):
